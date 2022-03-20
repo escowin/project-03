@@ -28,6 +28,10 @@ a:hover {
     border-left: 1px solid var(--tertiary);
 }
 
+footer a {
+    padding: 0;
+}
+
 footer a:hover {
     border: none;
 }
@@ -154,6 +158,10 @@ header nav ul li {
     width: 100%;
     border-radius: 15px;
 
+}
+
+.trending {
+    margin: 1vw;
 }
 
 .hide {
