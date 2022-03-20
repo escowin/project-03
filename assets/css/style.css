@@ -2,6 +2,7 @@
     --primary: rgb(199, 115, 5);
     --secondary: rgb(35, 90, 172);
     --tertiary: rgb(235, 223, 223);
+    --fourth: rgba(207, 170, 170, 0.808);
 }
 
 * {
@@ -16,13 +17,14 @@ a {
     text-decoration: none;
     color: var(--tertiary);
     padding: 5px 15px;
+    transition-duration: 1s;
+
 }
 
 a:hover {
     color: var(--secondary);
     border-right: 1px solid var(--tertiary);
     border-left: 1px solid var(--tertiary);
-    transition-duration: 1s;
 }
 
 body {
@@ -80,22 +82,37 @@ h2 {
     text-align: end;
 } */
 
+#search {
+    text-align: start;
+}
+
+#search p {
+    padding: 10px;
+}
+
 .search {
     padding: 15px;
     border-radius: 15px;
     border: 0 var(--secondary);
-    width: 20vw;
-    color: var(--primary)
+    width: 30vw;
+    color: var(--primary);
+    transition-duration: 1s;
 }
 
 .search:focus {
     color: var(--tertiary);
-    border: none;
-
+    background-color: var(--fourth);
+    outline-color: var(--tertiary);
+    font-variant: normal;
+    box-shadow: 2px 2px 15px var(--tertiary);
 }
 
 .card-container {
     display: flex;
     justify-content: space-between;
     font-size: 2vw;
+}
+
+.hide {
+    display: none;
 }
