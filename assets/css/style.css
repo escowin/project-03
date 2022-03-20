@@ -1,8 +1,8 @@
 :root {
-    --primary: rgb(199, 115, 5);
-    --secondary: rgb(35, 90, 172);
+    --primary: rgb(201, 120, 15);
+    --secondary: rgb(49, 90, 151);
     --tertiary: rgb(235, 223, 223);
-    --fourth: rgba(207, 170, 170, 0.808);
+    --fourth: rgba(189, 162, 162, 0.75);
 }
 
 * {
@@ -11,6 +11,7 @@
     font-variant: small-caps;
     font-weight: lighter;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.5;
 }
 
 a {
@@ -25,6 +26,10 @@ a:hover {
     color: var(--secondary);
     border-right: 1px solid var(--tertiary);
     border-left: 1px solid var(--tertiary);
+}
+
+footer a:hover {
+    border: none;
 }
 
 body {
@@ -73,44 +78,75 @@ header nav ul li {
     margin: 15px 0;
 }
 
-h2 {
+.title {
+    width: 20vw;
+    text-align: left;
+    font-size: 2vw;
     border-right: 2px solid var(--tertiary);
     padding: 20px;
 }
 
-/* #hero-container {
-    text-align: end;
-} */
+#search-container {
+    flex-direction: row;
+    justify-content: flex-start;
+    height: 20vh;
+    align-items: center;
+}
 
-#search {
+#search-text, .card-container {
     text-align: start;
+    padding: 20px 20px 20px 5vw;
+    /* margin-left: 40px; */
+    width: 100%;
+
 }
 
 #search p {
-    padding: 10px;
+    padding: 30px;
 }
 
-.search {
+.search-input {
     padding: 15px;
     border-radius: 15px;
-    border: 0 var(--secondary);
-    width: 30vw;
+    border: none;
+    width: 75%;
     color: var(--primary);
     transition-duration: 1s;
 }
 
-.search:focus {
+.search-input:focus {
     color: var(--tertiary);
-    background-color: var(--fourth);
-    outline-color: var(--tertiary);
+    border: none;
     font-variant: normal;
     box-shadow: 2px 2px 15px var(--tertiary);
+    background-color: var(--fourth);
+    outline: none;
+}
+
+.search-input:focus::placeholder {
+    color: var(--tertiary);
+    font-variant: small-caps;
 }
 
 .card-container {
     display: flex;
     justify-content: space-between;
-    font-size: 2vw;
+    font-size: 1vw;
+    text-align: center;
+}
+
+.card {
+    width: 20%;
+    border-radius: 15px;
+    /* border: 1px solid red; */
+}
+
+.img-container {
+    width: 100%;
+    /* border: 1px solid red; */
+}
+.img-container img {
+    width: 100%;
 }
 
 .hide {
