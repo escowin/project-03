@@ -138,9 +138,8 @@ header nav ul li {
 .card {
     width: 20%;
     border-radius: 15px;
-    opacity: .7;
-    transition-duration: 1s;
-    /* border: 1px solid red; */
+    opacity: .75;
+    transition: 1s;
 }
 
 .card:hover {
@@ -150,7 +149,6 @@ header nav ul li {
 
 .img-container {
     width: 100%;
-    /* border: 1px solid red; */
 }
 .img-container img {
     width: 100%;
