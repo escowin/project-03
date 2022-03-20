@@ -138,15 +138,22 @@ header nav ul li {
 .card {
     width: 20%;
     border-radius: 15px;
-    /* border: 1px solid red; */
+    opacity: .75;
+    transition: 1s;
+}
+
+.card:hover {
+    opacity: 1;
+    box-shadow: 5px 5px 20px var(--tertiary);
 }
 
 .img-container {
     width: 100%;
-    /* border: 1px solid red; */
 }
 .img-container img {
     width: 100%;
+    border-radius: 15px;
+
 }
 
 .hide {
