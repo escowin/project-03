@@ -16,7 +16,7 @@
     line-height: 1.5;
 
     /* visual aid. delete later */
-    border: 1px solid red;
+    /* border: 1px solid red; */
 }
 
 /* A STYLES */
@@ -93,14 +93,12 @@ header nav ul li {
 
 .title {
     width: 20vw;
-    text-align: left;
     font-size: 2vw;
     border-right: 2px solid var(--tertiary);
     padding: 20px;
 }
 
 /* SEARCH SECTION */
-
 #search-container {
     flex-direction: row;
     justify-content: flex-start;
@@ -144,6 +142,11 @@ header nav ul li {
 }
 
 /* SERVICES & TRENDING STYLES */
+#services-container, #trending-container {
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
 
 .card-container {
     display: flex;
@@ -154,6 +157,7 @@ header nav ul li {
 
 .card {
     width: 20%;
+    margin: 10px;
     border-radius: 15px;
     opacity: .75;
     transition: 1s;
