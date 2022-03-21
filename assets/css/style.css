@@ -1,3 +1,4 @@
+/* COLOR PALETTE */
 :root {
     --primary: rgb(201, 120, 15);
     --secondary: rgb(49, 90, 151);
@@ -5,6 +6,7 @@
     --fourth: rgba(189, 162, 162, 0.75);
 }
 
+/* UNIVERSVALS */
 * {
     margin: 0;
     padding: 0;
@@ -12,8 +14,12 @@
     font-weight: lighter;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.5;
+
+    /* visual aid. delete later */
+    border: 1px solid red;
 }
 
+/* A STYLES */
 a {
     text-decoration: none;
     color: var(--tertiary);
@@ -28,10 +34,15 @@ a:hover {
     border-left: 1px solid var(--tertiary);
 }
 
+footer a {
+    padding: 0;
+}
+
 footer a:hover {
     border: none;
 }
 
+/* BODY STYLES */
 body {
     display: flex;
     flex-direction: column;
@@ -40,19 +51,16 @@ body {
     align-items: center;
 }
 
+/* HEADER & FOOTER STYLES */
 header, footer {
     justify-content: space-around;
-    padding: 25px;
+    padding: 10px 25px;
     background-color: var(--primary);
     color: var(--tertiary);
     border-radius: 15px;
     width: 90vw;
     text-align: center;
     font-size: 1vw;
-}
-
-footer a {
-    padding: 0;
 }
 
 header h1 {
@@ -70,6 +78,7 @@ header nav ul li {
     width: 25vw;
 }
 
+/* MAIN STYLES */
 .container {
     display: flex;
     justify-content: space-around;
@@ -89,6 +98,8 @@ header nav ul li {
     border-right: 2px solid var(--tertiary);
     padding: 20px;
 }
+
+/* SEARCH SECTION */
 
 #search-container {
     flex-direction: row;
@@ -132,6 +143,8 @@ header nav ul li {
     font-variant: small-caps;
 }
 
+/* SERVICES & TRENDING STYLES */
+
 .card-container {
     display: flex;
     justify-content: space-between;
@@ -164,9 +177,7 @@ header nav ul li {
     display: none;
 }
 
-/* MEDIA QUERIES */
-/* MOBILE VIEW */
-
+/* MEDIA QUERIES, MOBILE VIEW */
 @media screen and (max-width: 844px) {
     body {
         width: 80vw;
